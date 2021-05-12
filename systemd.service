@@ -4,7 +4,7 @@ Description=user service
 
 [Service]
 
-Environment=ZIPKIN_URL=http://0.0.0.0:8080/api/v2/spans
+#Environment=ZIPKIN_URL=http://0.0.0.0:8080/api/v2/spans
 Environment=AUTH_API_ADDRESS=http://LOGIN_ENDPOINT:8080
 Environment=AUTH_API_PORT=8080
 ExecStart=/bin/java -jar /root/users/target/users-api-0.0.1.jar
